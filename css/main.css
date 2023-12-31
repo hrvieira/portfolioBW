@@ -37,4 +37,32 @@
     margin: 2.5rem auto 4rem;
   }
 
+  .welcome {
+    font-size: 2.5rem;
+  }
+
+  .myName {
+    width: 88%;
+    font-size: 5.4rem;
+  }
+}
+
+@media (max-width: 483px) {
+  .welcome {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 448px) {
+  .welcome {
+    font-size: 1.9rem;
+  }
+
+  .myName {
+    font-size: 4.8rem;
+  }
+
+  .dev {
+    font-size: .8rem;
+  }
 }
