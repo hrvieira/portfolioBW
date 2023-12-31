@@ -1,0 +1,27 @@
+*,
+.header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: 'Playlist_Script';
+  src: local('Playlist_Script'), url('/css/font/Playlist_Script.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GlacialIndifference-Bold';
+  src: local('GlacialIndifference-Bold'), url('/css/font/GlacialIndifference-Bold.otf') format('opentype');
+}
+
+.linkHeader {
+  text-decoration: none;
+  color: inherit;
+}
+
+.myName {
+  font-family: 'Playlist_Script', sans-serif;
+}
+
+.dev {
+  font-family: 'GlacialIndifference-Bold', sans-serif;
+}
