@@ -32,24 +32,18 @@
   text-shadow: 0px 0px 10px #525252;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .presentation {
     margin: 2.5rem auto 4rem;
   }
 
   .welcome {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .myName {
     width: 88%;
     font-size: 5.4rem;
-  }
-}
-
-@media (max-width: 483px) {
-  .welcome {
-    font-size: 2.1rem;
   }
 }
 
