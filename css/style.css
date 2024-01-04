@@ -1,6 +1,16 @@
 *,
 .header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserratBold', sans-serif;
+}
+
+@font-face {
+  font-family: 'montserratBold';
+  src: local('montserratBold'), url('/css/font/montserratBold.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url('/css/font/Montserrat.ttf') format('opentype');
 }
 
 @font-face {
