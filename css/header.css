@@ -1,5 +1,4 @@
-.displayFlex,
-.inicial {
+.displayFlex {
   display: flex;
 }
 
@@ -23,23 +22,102 @@
   text-shadow: 0px 0px 16px #D1D1D1;
 }
 
-.inicial {
+#inicial {
   align-items: center;
   font-size: 1.4rem;
   display: block;
   align-self: center;
 }
 
-.toggle {
-  display: flex;
+#menu {
+  gap: 3rem;
 }
 
 .olHeader {
-  padding-left: .5rem;
-  margin: 0 1rem;
   align-items: center;
   font-size: 1.1rem;
   align-self: center;
 }
 
-@media (max-width: 768px) {}
+#menu {
+  display: flex;
+  list-style: none;
+}
+
+#menu a {
+  display: block;
+  padding: .5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #btn-mobile {
+    color: #FFF;
+    display: flex;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    background: #D1D1D1;
+    height: 0;
+    transition: .6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+    color: #000;
+  }
+
+  #hamburger {
+    border-top: 2px solid #FFF;
+    width: 25px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    display: block;
+    content: '';
+    background: #FFF;
+    width: 25px;
+    height: 2px;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
