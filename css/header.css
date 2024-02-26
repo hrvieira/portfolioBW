@@ -54,7 +54,7 @@
   padding: 15px 0 15px 15px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   #btn-mobile {
     color: #FFF;
     display: flex;
