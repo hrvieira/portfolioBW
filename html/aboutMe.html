@@ -28,15 +28,17 @@
 
 <body>
   <header class="header displayFlex">
-    <a class="linkHeader inicial" href="/">Início</a>
-    <nav class="maxWidth">
-
-      <ul class="displayFlex menu">
+    <a class="linkHeader" id="inicial" href="/">Início</a>
+    <nav class="maxWidth" id="nav">
+      <ul class="displayFlex" id="menu" role="menu">
         <li class="olHeader"><a class="linkHeader" href="./aboutMe.html">Sobre mim</a></li>
         <li class="olHeader"><a class="linkHeader" href="./projects.html">Projetos</a></li>
         <li class="olHeader"><a class="linkHeader" href="#">Contato</a></li>
       </ul>
-      </div>
+      <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+        aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
     </nav>
   </header>
   <div class="shadowHeader"></div>
