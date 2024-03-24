@@ -1,6 +1,11 @@
 *,
 .header {
   font-family: 'montserratBold', sans-serif;
+  --color-branco: #FFF;
+  --color-cinza: #D1D1D1;
+  --color-preto: #000;
+  --color-shadow-li: rgba(0 0 0 / 80%);
+  --color-shadow-preto: rgba(0 0 0 / 80%);
 }
 
 @font-face {

@@ -8,7 +8,7 @@
   height: 30px;
   align-items: center;
 
-  background-color: #000;
+  background-color: var(--color-preto);
   padding: 1rem 2rem;
 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
@@ -19,7 +19,7 @@
 }
 
 .header a:hover {
-  text-shadow: 0px 0px 16px #D1D1D1;
+  text-shadow: 0px 0px 16px var(--color-cinza);
 }
 
 #inicial {
@@ -66,7 +66,7 @@
   }
 
   #btn-mobile {
-    color: #FFF;
+    color: var(--color-branco);
     display: flex;
     font-size: 1rem;
     border: none;
@@ -81,7 +81,7 @@
     width: 100%;
     top: 70px;
     right: 0;
-    background: #D1D1D1;
+    background: var(--color-cinza);
     height: 0;
     transition: .6s;
     z-index: 1000;
@@ -99,11 +99,11 @@
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, .2);
-    color: #000;
+    color: var(--color-preto);
   }
 
   #hamburger {
-    border-top: 2px solid #FFF;
+    border-top: 2px solid var(--color-branco);
     width: 25px;
   }
 
@@ -111,7 +111,7 @@
   #hamburger::before {
     display: block;
     content: '';
-    background: #FFF;
+    background: var(--color-branco);
     width: 25px;
     height: 2px;
     margin-top: 5px;
