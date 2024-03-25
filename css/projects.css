@@ -3,24 +3,19 @@
 }
 
 .navProject {
-     width: 90%;
      font-size: 1.3rem;
-     margin: 1rem 0 0;
-     display: flex;
-
      transition: .3s;
 }
 
 .navProject ul {
      display: flex;
-     flex-grow: 1;
-     flex-wrap: wrap;
-     margin: 0 auto;
+     justify-content: space-between;
 }
 
 .cards {
      width: 15rem;
      height: 20rem;
+     margin: 1rem 1rem;
      text-align: center;
      padding: .8rem;
      border-radius: 15px;
@@ -30,6 +25,7 @@
      -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
 
      transition: .3s;
+
 }
 
 .cards:hover {
@@ -48,9 +44,21 @@
      height: 90%;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 650px) {
+     .navProject ul {
+          display: flex;
+          flex-direction: column;
+     }
+}
+
+@media (max-width: 425px) {
      .navProject {
-          width: 80%;
+          margin: 0 auto;
+          display: flex;
+     }
+
+     .cards {
+          margin: 1rem auto;
      }
 }
 
